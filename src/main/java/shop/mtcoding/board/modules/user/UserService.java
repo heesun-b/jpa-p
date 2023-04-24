@@ -1,10 +1,10 @@
 package shop.mtcoding.board.modules.user;
 
-import java.util.Optional;
-
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+
+import java.util.Optional;
 
 @Service
 public class UserService {
@@ -24,4 +24,10 @@ public class UserService {
         // return userRepository.findById(id);
     }
 
+    public User save(UserSaveRequest request) {
+
+        return null;
+//        return userRepository.save(new User(null, request.getUsername(), request.getPassword()));
+
+    }
 }
